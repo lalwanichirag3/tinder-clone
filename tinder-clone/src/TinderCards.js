@@ -39,7 +39,7 @@ const  outOfFrame = (name) => {
                     preventSwipe={["up","down"]}
                     onSwipe={(dir) => swiped(dir, person.name)}
                     onCardLeftScreen={() => outOfFrame(person.name)}>
-                        <div /** this div shows the picture with the person name */
+                        <div className="cardContent" /** this div shows the picture with the person name */
                         style={{backgroundImage: `url(${person.imgUrl})`}}
                         className="card">
                             <h3>{person.name}</h3>
